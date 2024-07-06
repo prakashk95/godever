@@ -18,7 +18,7 @@ func helloworld(c *gin.Context) {
 }
 func main() {
 	r := gin.Default()
-	r.LoadHTMLGlob("template/*")
+	r.LoadHTMLGlob("/*")
 
 	r.GET("/", home)
 	r.GET("/hello-world", helloworld)
